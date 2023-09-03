@@ -1,23 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/header.js'
+import Footer from './components/footer.js'
+import Stories from './components/stories.js'
+import Form from './components/form.js'
+import  Team from './components/team.js'
+import Donation from './components/donation.js'
+import Login from './components/login.js'
+import Mediagallery from './components/mediagallery.js'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import images from './components/images';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+          <Header />
+          <Routes>
+            <Route exact path="/" element={<Stories/>}></Route>
+            <Route exact path="/signup" element={<Form/>}></Route>
+            <Route exact path="/team" element={<Team/>}></Route>
+            <Route exact path="/donation" element={<Donation/>}></Route>
+            <Route exact path="/login" element={<Login/>}></Route>
+            <Route exact path="/media" element={<Mediagallery images={images}/>}></Route>
+          </Routes>
+          <Footer />
+      </Router>
     </div>
   );
 }
