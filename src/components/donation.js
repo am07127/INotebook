@@ -1,21 +1,22 @@
 import React from "react";
 import Combobox from "./combobox";
+import Accordion from "./accordion";
 const cardData = [
   {
     id: 1,
-    name: "Person 1",
+    name: "Kubra",
     collected: 2000,
     total: 5000,
   },
   {
     id: 2,
-    name: "Person 2",
+    name: "Aiza",
     collected: 3500,
     total: 5000,
   },
   {
     id: 3,
-    name: "Person 3",
+    name: "Areeb",
     collected: 1200,
     total: 5000,
   },
@@ -23,7 +24,7 @@ const cardData = [
 
 const DonationPage = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-200 to-purple-300 min-h-screen flex items-center justify-center">
+    <div className="bg-gradient-to-r from-blue-500 to-green-400 min-h-screen flex flex-col items-center justify-center">
       <div className="container mx-auto mt-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {cardData.map((person) => (
@@ -45,6 +46,7 @@ const DonationPage = () => {
                 <p>Funds Remaining:</p>
                 <p>${person.total - person.collected}</p>
               </div>
+              
               <div className="mt-4">
                 <div className="bg-gray-300 h-4 rounded-full">
                   <div
@@ -54,6 +56,9 @@ const DonationPage = () => {
                     }}
                   ></div>
                 </div>
+              </div>
+              <div className="flex justify-between mt-2">
+                <Accordion/>
               </div>
             </div>
           ))}
