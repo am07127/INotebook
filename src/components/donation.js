@@ -24,7 +24,7 @@ const cardData = [
 
 const DonationPage = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-green-400 min-h-screen flex flex-col items-center justify-center">
+    <div className="bg-gradient-to-r from-blue-300 to-green-300 min-h-screen flex flex-col items-center justify-center">
       <div className="container mx-auto mt-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {cardData.map((person) => (

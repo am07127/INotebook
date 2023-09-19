@@ -18,8 +18,8 @@ export default class extends Component {
             </Link>
             <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
               <Link className="mr-5 hover:text-gray-900" to="/team">Team</Link>
-              <Link className="mr-5 hover:text-gray-900" to="/signup">Become a member</Link>
-              <Link className="mr-5 hover:text-gray-900" to="/">Success Stories</Link>
+              <Link className="mr-5 hover:text-gray-900" to="/">Home</Link>
+              <Link className="mr-5 hover:text-gray-900" to="/stories">Success Stories</Link>
               <Link className="mr-5 hover:text-gray-900" to="/donation">Make a Donation</Link>
               <Link className="mr-5 hover:text-gray-900" to="/media">Media Gallery</Link>
             </nav>
