@@ -4,7 +4,7 @@ import Card from "./card";
 export default class extends Component {
   render() {
     return (
-      <div style={{backgroundColor:"powderblue"}}>
+      <div className="bg-gradient-to-r from-blue-300 to-green-300">
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap -m-4">
