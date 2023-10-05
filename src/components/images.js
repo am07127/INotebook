@@ -1,21 +1,21 @@
 const images = [{
     id: 1,
-    src: "https://source.unsplash.com/random/500x400/?teaching",
+    src: "https://source.unsplash.com/random/1080x100/?career",
     alt: "Image 1"
 },
 {
     id: 2,
-    src: "https://source.unsplash.com/random/500x400/?empowering",
+    src: "https://source.unsplash.com/random/1080x100/?house",
     alt: "Image 2 "
 },
 {
     id: 3,
-    src: "https://source.unsplash.com/random/500x400/?learning",
+    src: "https://source.unsplash.com/random/1080X100/?learning",
     alt: "Image 3"
 },
 {
     id: 4,
-    src: "https://source.unsplash.com/random/500x400/?happy",
+    src: "https://source.unsplash.com/random/1080x100/?happy",
     alt: "Image 4"
 }
 ];

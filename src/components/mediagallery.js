@@ -15,22 +15,19 @@ const MediaGallery = ({ images }) => {
   };
 
   return (
-    // <div className="w-full bg-blue-900 py-16" style={{ backgroundColor:'#e1eedd'}}>
-    <div className="Container" style={{width:"150%"}}>
-      <div className="container mx-auto">
-        <div className="w-full md:w-2/3 mx-auto">
-          <Slider {...settings} className="rounded-lg overflow-hidden">
-            {images.map((item) => (
-              <div key={item.id} className="focus:outline-none">
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  className="w-full h-auto md:h-96 object-cover object-center"
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
+    <div className="w-full flex justify-center items-center">
+      <div className="w-full">
+        <Slider {...settings} className="rounded-lg overflow-hidden">
+          {images.map((item) => (
+            <div key={item.id} className="focus:outline-none">
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="w-full h-auto md:h-96 object-cover object-center"
+              />
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

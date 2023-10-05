@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
 const quotes = [
-  'Quote 1: Your first quote goes here.',
-  'Quote 2: Add your second quote.',
-  'Quote 3: Continue with more quotes.',
+  'Working as a trained beautician, the earnings I make will help me continue my education as well ~Kiran',
+  'With the new digital skills I acquire, I can earn well and become the support of my family ~Mahnoor',
+  'With acquired knowledge and certification in digital marketing and design, I now feel empowered to secure my future ~Maryam',
+  'After completing computer and language courses I would feel much more confident applying for well-paying jobs ~Jashwanti',
+
 ];
 
 const QuoteSlideshow = () => {
