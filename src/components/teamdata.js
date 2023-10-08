@@ -1,6 +1,5 @@
 
 
-const TeamData = [{name:"Farhan Anwar",image:"/PICTURES/FARHAN.jpg",id:1},{name: "Wajeeha Farooqi",image:"/PICTURES/WAJEEHA 1.jpg",id:2},{name:"Zahra",image:"/PICTURES/ZAHRA.png",id:3
-},{name:"Imaara Zulfiqar",image:"/PICTURES/IMAARA.jpg",id:3}]
+const TeamData = [{name: "Wajeeha Farooqi",image:"/PICTURES/WAJEEHA 1.jpg", title:"Project Manager",id:1}, {name:"Imaara Zulfiqar Ali",image:"/PICTURES/IMAARA.jpg", title:"Research Analyst", id:2}, {name:"Alishba Karam",image:"/PICTURES/ALISHBA.jpeg", title:"Social Media Manager", id:3}]
 
 export default TeamData;
