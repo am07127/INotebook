@@ -1,11 +1,11 @@
 const images = [{
     id: 1,
-    src: "https://source.unsplash.com/random/1080x100/?career",
+    src: "PICTURES/SHAHNILA.jpg",
     alt: "Image 1"
 },
 {
     id: 2,
-    src: "https://source.unsplash.com/random/1080x100/?house",
+    src: "PICTURES/ESHMIL.jpg",
     alt: "Image 2 "
 },
 {
@@ -15,7 +15,7 @@ const images = [{
 },
 {
     id: 4,
-    src: "https://source.unsplash.com/random/1080x100/?happy",
+    src: "PICTURES/MAHNOOR.jpg",
     alt: "Image 4"
 }
 ];

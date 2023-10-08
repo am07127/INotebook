@@ -22,9 +22,10 @@ const NGOInfoSection = () => {
             entrepreneurship, and supporting social causes <br/>Our work finds
             resonance from the Sustainable Development Goal 8 that calls for
             promoting sustained, inclusive and sustainable economic growth, full
-            and productive employment and decent work for all, <br/>So, if you can
-            Help build a skill, Provide financial support for our program/for
-            setting up a business Employ our trained communities Then you become
+            and productive employment and decent work for all, <br/>So, if you can:<br/>
+            <ul><li>Help build a skill</li>Provide financial support for our program/for
+            setting up a business<li></li><li>Employ our trained communities</li> </ul>
+            Then you become
             part of our mission!
           </p>
           <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
