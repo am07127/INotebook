@@ -1,0 +1,3 @@
+const Advisor = [{name:"Farhan Anwar",image:"/PICTURES/FARHAN.jpg", title:"Assistant Professor of Practice, Habib University and CEO Urban Collaborative",id:1}, {name:"Omar Anwar",image:"/PICTURES/OMAR.jpg", title:"Senior Vice President, Treasury, Dubai Islamic Bank, UAE", id:2}, {name:"Zahra Ali",image:"/PICTURES/ZAHRA.png", title:"Sustainability Consultant", id:3}, {name:"Sarah Shafiq",image:"/PICTURES/SARAH.jpg", title:"Manager", id:4}]
+
+export default Advisor;
