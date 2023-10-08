@@ -7,7 +7,7 @@ export default class team extends Component {
     return (
 <section class="text-gray-600 body-font bg-blue-300">
   <div class="container px-5 py-24 mx-auto">
-  <div class="flex flex-col text-center w-full mb-20">
+  <div class="flex flex-col text-center w-full mb-14">
     <h1 class="text-4xl font-arial font-bold title-font mb-4 text-gray-700 tracking-wider">Meet Our Team</h1>
     <h2 class="lg:w-2/3 mx-auto leading-relaxed text-xl text-gray-900 font-semibold">Management Team</h2>
   </div>
@@ -21,7 +21,7 @@ export default class team extends Component {
             <div class="flex-grow sm:pl-8">
               <h2 class="title-font font-bold text-lg text-gray-900">{person.name}</h2>
               <h3 class="text-gray-900 font-medium mb-3">{person.title}</h3>
-              <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+              <p class="mb-4">{person.info}</p>
               <span class="inline-flex">
                 <a class="text-gray-500">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -64,6 +64,7 @@ export default class team extends Component {
               <h2 class="title-font font-bold text-lg text-gray-900">{person1.name}</h2>
               <h3 class="text-gray-900 font-medium mb-3">{person1.title}</h3>
               <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+              
               <span class="inline-flex">
                 <a class="text-gray-500">
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
