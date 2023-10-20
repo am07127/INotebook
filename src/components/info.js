@@ -16,19 +16,27 @@ const NGOInfoSection = () => {
           <p className="leading-relaxed text-lg">
             We believe that stable economies providing innovative, inclusive
             revenue generation options for communities can help build an
-            equitable and healthy society<br/> Mera Hunar Mera Kaam is just such an
-            endeavor that aims to work with communities for enhancing their
-            knowledge and skills, providing access to employment, facilitating
-            entrepreneurship, and supporting social causes <br/>Our work finds
-            resonance from the Sustainable Development Goal 8 that calls for
-            promoting sustained, inclusive and sustainable economic growth, full
-            and productive employment and decent work for all, <br/>So, if you can:<br/>
-            <ul><li>Help build a skill</li>Provide financial support for our program/for
-            setting up a business<li></li><li>Employ our trained communities</li> </ul>
-            Then you become
-            part of our mission!
+            equitable and healthy society
+            <br /> Mera Hunar Mera Kaam is just such an endeavor that aims to
+            work with communities for enhancing their knowledge and skills,
+            providing access to employment, facilitating entrepreneurship, and
+            supporting social causes <br />
+            Our work finds resonance from the Sustainable Development Goal 8
+            that calls for promoting sustained, inclusive and sustainable
+            economic growth, full and productive employment and decent work for
+            all, <br />
+            So, if you can:
+            <br />
+            <strong>
+              <ul>
+                <li>Help build a skill</li>Provide financial support for our
+                program/for setting up a business<li></li>
+                <li>Employ our trained communities</li>{" "}
+              </ul>
+            </strong>
           </p>
           <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+          <p className="leading-relaxed text-lg">Then you become part of our mission!</p>
         </div>
       </div>
     </section>

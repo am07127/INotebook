@@ -17,7 +17,7 @@ export default class extends Component {
               <span className="ml-3 text-xl">Mera Hunar Mera Kaam - A Project of Urban Collaborative</span>
             </Link>
             <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-              <Link className="mr-5 hover:text-gray-900" to="/team">Team</Link>
+              <Link className="mr-5 hover:text-gray-900" to="/team">About Us</Link>
               <Link className="mr-5 hover:text-gray-900" to="/">Home</Link>
               <Link className="mr-5 hover:text-gray-900" to="/stories">Success Stories</Link>
               <Link className="mr-5 hover:text-gray-900" to="/donation">Make a Donation</Link>

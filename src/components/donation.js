@@ -20,6 +20,12 @@ const cardData = [
     collected: 1200,
     total: 5000,
   },
+  {
+    id: 4,
+    name: "Seema",
+    collected: 4000,
+    total: 5000,
+  }
 ];
 
 const DonationPage = () => {

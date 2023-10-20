@@ -10,8 +10,11 @@ import Login from './components/login.js'
 import Mediagallery from './components/mediagallery.js'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import images from './components/images';
+import Memberinfo from './components/memberinfo';
+
 
 function App() {
+  
   return (
     <div className="App">
       <Router>
@@ -23,6 +26,7 @@ function App() {
             <Route exact path="/donation" element={<Donation/>}></Route>
             <Route exact path="/login" element={<Login/>}></Route>
             <Route exact path="/media" element={<Mediagallery images={images}/>}></Route>
+            <Route exact path="/team/info" element={<Memberinfo/>}></Route>
           </Routes>
           <Footer />
       </Router>
