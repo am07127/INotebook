@@ -11,12 +11,14 @@ import Mediagallery from './components/mediagallery.js'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import images from './components/images';
 import Memberinfo from './components/memberinfo';
+import PersonState from './context/PersonState';
 
 
 function App() {
   
   return (
     <div className="App">
+      <PersonState>
       <Router>
           <Header />
           <Routes>
@@ -30,6 +32,7 @@ function App() {
           </Routes>
           <Footer />
       </Router>
+      </PersonState>
     </div>
   );
 }
