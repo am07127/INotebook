@@ -1,47 +1,70 @@
 import React from "react";
-import Combobox from "./combobox";
-import Accordion from "./accordion";
+// import Combobox from "./combobox";
+import { useState } from "react";
+
 const cardData = [
   {
     id: 1,
     name: "Kubra",
-    collected: 2000,
-    total: 5000,
+    collected: 5000,
+    total: 185000,
+    image: "/PICTURES/KUBRA.jpg",
+    description:
+      "An aspiring beautician and mother of three, Kubra is looking forward to pursue her passion by setting up a home studio for which she needs your assistance",
   },
   {
     id: 2,
-    name: "Aiza",
+    name: "Jashwanti",
     collected: 3500,
     total: 5000,
+    image: "/PICTURES/JASHWANTI.jpg",
   },
   {
     id: 3,
-    name: "Areeb",
+    name: "Pargatti",
     collected: 1200,
     total: 5000,
+    image: "/PICTURES/PARGATTI.jpg",
   },
   {
     id: 4,
-    name: "Seema",
+    name: "Rajeeb",
     collected: 4000,
     total: 5000,
-  }
+    image: "/PICTURES/RAJEEB.jpg",
+  },
 ];
 
 const DonationPage = () => {
+  const numberOfColumns = Math.min(cardData.length, 5); // Let's say maximum 4 columns for large screens
+
+  // Use the calculated number of columns in your className
+  const gridClass = `grid grid-cols-1 md:grid-cols-${numberOfColumns} gap-4`;
+  const [openAccordion, setOpenAccordion] = useState(null);
+
+  const handleAccordionClick = (personId) => {
+    // If the clicked accordion is already open, close it. Otherwise, open it.
+    setOpenAccordion((prevOpenAccordion) =>
+      prevOpenAccordion === personId ? null : personId
+    );
+  };
   return (
-    <div className="bg-gradient-to-r from-blue-300 to-green-300 min-h-screen flex flex-col items-center justify-center">
-      <div className="container mx-auto mt-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="bg-gradient-to-r from-blue-300 to-green-300 min-h-screen flex flex-col items-center justify-center py-8">
+      <h1 className="text-6xl text-blue-800 font-bold mb-4">
+        Make a Donation, Change a Life
+      </h1>
+      <div className="container mx-auto mt-8 py-8">
+        <div className={gridClass}>
           {cardData.map((person) => (
             <div
               key={person.id}
               className="bg-white rounded-lg shadow-lg p-4 transition duration-300 transform hover:scale-105"
             >
               <img
-                src={`https://via.placeholder.com/150?text=${person.name}`}
+                src={`${person.image}`}
                 alt={person.name}
-                className="w-full h-auto rounded-full"
+                className="w-full h-full rounded-full object-cover object-center"
+                style={{ maxHeight: "350px" }}
               />
               <h3 className="text-xl font-semibold mt-4">{person.name}</h3>
               <div className="flex justify-between mt-2">
@@ -52,7 +75,7 @@ const DonationPage = () => {
                 <p>Funds Remaining:</p>
                 <p>${person.total - person.collected}</p>
               </div>
-              
+
               <div className="mt-4">
                 <div className="bg-gray-300 h-4 rounded-full">
                   <div
@@ -64,13 +87,25 @@ const DonationPage = () => {
                 </div>
               </div>
               <div className="flex justify-between mt-2">
-                <Accordion/>
+                <button
+                  className="accordion-header bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full inline-block mx-auto mt-4 focus:outline-none text-center"
+                  onClick={() => handleAccordionClick(person.id)}
+                >
+                  Learn About {person.name}
+                </button>
               </div>
+              {openAccordion === person.id && (
+                <div className="accordion-body bg-gray-100 p-4 border-t border-gray-200 py-2">
+                  <p className="text-lg text-gray-800 font-serif">
+                    {person.description}
+                  </p>
+                </div>
+              )}
             </div>
           ))}
         </div>
       </div>
-      <div
+      {/* <div
         className="bg-white p-8 rounded-md shadow-md w-96"
         style={{ margin: "50px" }}
       >
@@ -144,6 +179,30 @@ const DonationPage = () => {
             Submit Donation
           </button>
         </form>
+      </div> */}
+      <div className="bg-blue-400 rounded-lg px-6 py-8 max-w-md mx-auto text-center">
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Donate to our Cause
+        </h2>
+
+        <p className="text-gray-100">
+          <strong>
+            Your contribution can make a difference! Please consider donating.
+          </strong>
+        </p>
+        <p className="text-gray-100">Habib Metropolitan Bank</p>
+        <p className="text-gray-100">Account Number: 1234567890</p>
+        <p className="text-gray-100">Routing Number: 9876543210</p>
+        <p className="text-gray-100">Account Title: Urban Collaborative</p>
+
+        <a
+          href="https://forms.gle/qKVhQ5A75tQxHQDP8"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-white text-indigo-500 mt-8 rounded-full py-4 px-8 inline-block font-medium hover:bg-indigo-600 hover:text-white transition duration-200"
+        >
+          Donate Now
+        </a>
       </div>
     </div>
   );
