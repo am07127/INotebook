@@ -7,7 +7,7 @@ export default class aboutusinfo extends Component {
         <div class="flex justify-center">
           <div class="flex flex-col max-w-7xl justify-center items-center">
             <div class="overflow-hidden w-3/4 bg-white m-4 shadow-lg flex flex-col md:flex-row justify-center">
-              <div class="h-26 w-full overflow-hidden">
+              <div class="h-26 w-full overflow-hidden flex">
                 {" "}
                 <img
                   src="PICTURES/BASKET.png" 
@@ -16,7 +16,7 @@ export default class aboutusinfo extends Component {
                 />{" "}
               </div>
               <div class="grid p-2">
-                <div class="font-bold text-lg text-black m-2 mt-10">
+                <div class="font-bold text-lg text-black m-5 mt-10">
                   Building Knowledge and Skills{" "}
                 </div>
                 <div class="text-gray-500 m-2 text-sm">
