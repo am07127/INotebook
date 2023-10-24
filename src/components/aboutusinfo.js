@@ -10,7 +10,7 @@ export default class aboutusinfo extends Component {
               <div class="h-26 w-full overflow-hidden">
                 {" "}
                 <img
-                  src="https://source.unsplash.com/random/500x400/?knowledge "
+                  src="PICTURES/BASKET.png" 
                   alt=""
                   class=""
                 />{" "}

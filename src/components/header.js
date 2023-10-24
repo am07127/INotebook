@@ -22,6 +22,7 @@ export default class extends Component {
               <Link className="mr-5 hover:text-gray-900" to="/stories">Success Stories</Link>
               <Link className="mr-5 hover:text-gray-900" to="/donation">Make a Donation</Link>
               <Link className="mr-5 hover:text-gray-900" to="/media">Media Gallery</Link>
+              <Link className="mr-5 hover:text-gray-900" to="/hunarkada">HunarKada</Link>
             </nav>
             <Link to="/login">
             <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" style={{color:'white',backgroundColor:'dodgerblue'}}>
