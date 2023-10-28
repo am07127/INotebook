@@ -23,9 +23,10 @@ export default class extends Component {
                       Mahnoor Irshad
                     </h1>
                     <p className="leading-relaxed mb-3">
-                      A Mathematics Major student from Karachi University successfully completes her Graphic Designing course and starts freelancing
+                      A Mathematics Major student from Karachi University
+                      successfully completes her Graphic Designing course and
+                      starts freelancing
                     </p>
-                    
                   </div>
                 </div>
               </div>
@@ -44,34 +45,33 @@ export default class extends Component {
                       Shehnila Ansari
                     </h1>
                     <p className="leading-relaxed mb-3">
-                      Shehnila Ansari, a beautician from Karachi successfully completes her certification course and starts her own salon.
+                      Shehnila Ansari, a beautician from Karachi successfully
+                      completes her certification course and starts her own
+                      salon.
                     </p>
                   </div>
                 </div>
               </div>
-              
-              </div>
+            </div>
           </div>
-          <div style={{ display: 'flex'}}>
-    <iframe
-        width="640"
-        height="315"
-        src="https://www.youtube.com/embed/gYSZmx_0FCo"
-        frameBorder="2"
-        allowFullScreen
-        style={{ marginRight: '15px' }}
-    ></iframe>
-    <iframe
-        width="640"
-        height="315"
-        src="https://www.youtube.com/embed/dO4x-VC78OU"
-        frameBorder="2"
-        allowFullScreen
-        style={{ marginLeft: '15px' }}
-    ></iframe>
-</div>
-
-
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", paddingBottom: "20px" }}>
+            <iframe
+              width="640"
+              height="315"
+              src="https://www.youtube.com/embed/gYSZmx_0FCo"
+              frameBorder="2"
+              allowFullScreen
+              style={{  paddingBottom: "20px"}}
+            ></iframe>
+            <iframe
+              width="640"
+              height="315"
+              src="https://www.youtube.com/embed/dO4x-VC78OU"
+              frameBorder="2"
+              allowFullScreen
+              style={{ paddingTop: "20px", paddingBottom: "20px" }}
+            ></iframe>
+          </div>
         </section>
       </div>
     );

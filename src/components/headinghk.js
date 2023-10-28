@@ -17,7 +17,7 @@ const HeadingContainer = styled.h1`
 const Headinghk = () => {
   return (
     <HeadingContainer>
-      <div className="text-3xl md:text-5xl px-8 text-black font-cursive body-font">Center for Skills Development</div>
+      <div className="text-3xl md:text-5xl px-8 text-black font-bold text-blue-700 font-cursive body-font">HunarKada-Center for Skills Development</div>
 
     </HeadingContainer>
   );
