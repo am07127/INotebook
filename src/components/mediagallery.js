@@ -11,24 +11,24 @@ const MediaGallery = ({ images }) => {
     slidesToScroll: 1,
     lazyLoad: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
   };
 
   return (
-    <div className="w-full flex justify-center items-center">
-      <div className="w-full">
+    <div className="w-full justify-center items-center">
+      {/* <div className="w-"> */}
         <Slider {...settings} className="rounded-lg overflow-hidden">
           {images.map((item) => (
             <div key={item.id} className="focus:outline-none">
               <img
                 src={item.src}
                 alt={item.alt}
-                className="w-full h-auto md:h-96 object-cover object-center"
+                className="w-full md:h-96 object-center"
               />
             </div>
           ))}
         </Slider>
-      </div>
+      {/* </div> */}
     </div>
   );
 };

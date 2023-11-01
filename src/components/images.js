@@ -1,21 +1,21 @@
 const images = [{
     id: 1,
-    src: "PICTURES/SHAHNILA.jpg",
+    src: "PICTURES/1.png",
     alt: "Image 1"
 },
 {
     id: 2,
-    src: "PICTURES/ESHMIL.jpg",
+    src: "PICTURES/2.png",
     alt: "Image 2 "
 },
 {
     id: 3,
-    src: "https://source.unsplash.com/random/1080X100/?learning",
+    src: "PICTURES/3.png",
     alt: "Image 3"
 },
 {
     id: 4,
-    src: "PICTURES/MAHNOOR.jpg",
+    src: "PICTURES/4.png",
     alt: "Image 4"
 }
 ];
