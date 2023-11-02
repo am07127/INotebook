@@ -6,7 +6,7 @@ export default class extends Component {
   render() {
     return (
     <div>
-        <div className="Container py-6 bg-gradient-to-br from-blue-300 via-teal-400 to-green-300">
+        <div className="Container py-6 bg-white">
           <Headinghk />
         </div>
         <div class="flex justify-center   p-8 ">

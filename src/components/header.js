@@ -5,7 +5,7 @@ export default class extends Component {
   render() {
     return (
       <div>
-        <header className="text-gray-600 body-font">
+        <header className="text-gray-600 body-font bg-gradient-to-r from-blue-300 to-green-300">
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <Link className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
               <img

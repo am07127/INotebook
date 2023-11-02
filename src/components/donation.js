@@ -49,8 +49,8 @@ const DonationPage = () => {
     );
   };
   return (
-    <div className="bg-gradient-to-r from-blue-300 to-green-300 min-h-screen flex flex-col items-center justify-center py-8">
-      <h1 className="text-6xl text-blue-800 font-bold mb-4">
+    <div className="bg-white min-h-screen flex flex-col items-center justify-center py-8">
+      <h1 className="text-3xl md:text-5xl px-8 text-black font-bold text-blue-700 font-cursive body-font">
         Make a Donation, Change a Life
       </h1>
       <div className="container mx-auto mt-8 py-8">
@@ -58,7 +58,7 @@ const DonationPage = () => {
           {cardData.map((person) => (
             <div
               key={person.id}
-              className="bg-white rounded-lg shadow-lg p-4 transition duration-300 transform hover:scale-105"
+              className="bg-blue-300 rounded-lg shadow-lg p-4 transition duration-300 transform hover:scale-105"
             >
               <img
                 src={`${person.image}`}
