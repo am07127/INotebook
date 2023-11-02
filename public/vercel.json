@@ -8,5 +8,12 @@
           "distDir": "build"
         }
       }
-    ]
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ],
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }] 
   }
