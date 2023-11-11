@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-
+//latest stories
 export default class extends Component {
   render() {
     return (
