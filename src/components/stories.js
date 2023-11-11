@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "./card";
+
 
 export default class extends Component {
   render() {
@@ -12,7 +12,7 @@ export default class extends Component {
                 <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-white">
                   <img
                     className="lg:h-64 lg:w-full md:h-46 w-full object-cover object-center"
-                    src="PICTURES\Mahnoor_2.jpg"
+                    src="PICTURES\Mahnoor_2.jpeg"
                     alt="blog"
                   />
                   <div className="p-6">
@@ -62,6 +62,7 @@ export default class extends Component {
               frameBorder="2"
               allowFullScreen
               style={{  paddingBottom: "20px"}}
+              title="video"
             ></iframe>
             <iframe
               width="640"
@@ -70,6 +71,7 @@ export default class extends Component {
               frameBorder="2"
               allowFullScreen
               style={{ paddingTop: "20px", paddingBottom: "20px" }}
+              title="video1"
             ></iframe>
           </div>
         </section>
