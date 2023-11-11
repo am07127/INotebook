@@ -128,10 +128,6 @@ const Team = () => {
                         <h3 class="text-gray-900 font-medium mb-3">
                           {person1.title}
                         </h3>
-                        <p class="mb-4">
-                          DIY tote bag drinking vinegar cronut adaptogen squid
-                          fanny pack vaporware.
-                        </p>
 
                         <span class="inline-flex">
                           <a class="text-gray-500">
