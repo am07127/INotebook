@@ -12,7 +12,7 @@ export default class extends Component {
                 <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-white">
                   <img
                     className="lg:h-64 lg:w-full md:h-46 w-full object-cover object-center"
-                    src="PICTURES\Mahnoor_2.jpeg"
+                    src="PICTURES\mahnoorlatest.jpeg"
                     alt="blog"
                   />
                   <div className="p-6">
