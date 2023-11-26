@@ -54,7 +54,7 @@ export default class extends Component {
               </div>
             </div>
           </div>
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", paddingBottom: "20px" }}>
+          {/* <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", paddingBottom: "20px" }}>
             <iframe
               width="640"
               height="315"
@@ -73,7 +73,7 @@ export default class extends Component {
               style={{ paddingTop: "20px", paddingBottom: "20px" }}
               title="video1"
             ></iframe>
-          </div>
+          </div> */}
         </section>
       </div>
     );

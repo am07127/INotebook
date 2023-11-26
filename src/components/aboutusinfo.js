@@ -16,11 +16,11 @@ export default class aboutusinfo extends Component {
                 />{" "}
               </div>
               <div class="grid p-2">
-                <div class="font-bold text-lg text-black m-5 mt-10">
+                <div class="font-bold text-lg text-black m-3 mt-10">
                   Building Knowledge and Skills{" "}
                 </div>
-                <div class="text-gray-500 m-2 text-sm">
-                  <a href="">
+                <div class="text-gray-500 m-4 text-sm">
+                  <a>
                     Our team will collaborate with knowledge and skill based
                     individuals and organizations around a diversified basket of
                     knowledge and skill sets for training people belonging to
@@ -39,8 +39,8 @@ export default class aboutusinfo extends Component {
                 <div class="font-bold text-lg text-black m-2 mt-10">
                   Access to Employment and Entrepreneurship{" "}
                 </div>
-                <div class="text-gray-500 m-2 text-sm">
-                  <a href="">
+                <div class="text-gray-500 m-1 text-sm">
+                  <a >
                     Knowledge enhancement and skills development would follow by
                     assisting communities in accessing gainful employment or on
                     treading the path of entrepreneurship. Here again, our team
@@ -52,28 +52,34 @@ export default class aboutusinfo extends Component {
               </div>
               <div class="h-26 w-full overflow-hidden">
                 {" "}
+                <a href="https://www.pexels.com/@anntarazevich/" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://source.unsplash.com/random/500x400/?employment "
+                  src="PICTURES/pexels-anna.jpg"
                   alt=""
                   class=""
                 />{" "}
+                </a>
               </div>
             </div>
             <div class="overflow-hidden w-3/4 bg-white m-4 shadow-lg flex flex-col md:flex-row justify-center">
               <div class="h-26 w-full overflow-hidden">
                 {" "}
+                <a href="https://www.pexels.com/@cottonbro/" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="https://source.unsplash.com/random/500x400/?charity "
+                  src="PICTURES/pexels-cottonbro-studio.jpg"
                   alt=""
-                  class=""
+                  href="www.pexels.com/@cottonbro/"
+                  class="max-h-60 w-full object-cover"
                 />{" "}
+                </a>
+                
               </div>
               <div class="grid p-2">
-                <div class="font-bold text-lg text-black m-2 mt-10">
+                <div class="font-bold text-lg text-black m-1 mt-12">
                   Supporting Social Causes{" "}
                 </div>
-                <div class="text-gray-500 m-2 text-sm">
-                  <a href="">
+                <div class="text-gray-500 m-4 text-sm">
+                  <a >
                     Another area of our work would involve supporting existing
                     social causes where we have made a beginning by setting up a
                     Book Bank – collecting books from people willing to donate,

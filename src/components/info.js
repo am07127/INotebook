@@ -30,7 +30,7 @@ const NGOInfoSection = () => {
             <strong>
               <ul>
                 <li>Help build a skill</li>Provide financial support for our
-                program/for setting up a business<li></li>
+                program, for setting up a business<li></li>
                 <li>Employ our trained communities</li>{" "}
               </ul>
             </strong>
