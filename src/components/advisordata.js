@@ -2,8 +2,8 @@ const Advisor = [
   {
     name: "Farhan Anwar",
     image: "/PICTURES/FARHAN.jpg",
-    title:
-      "Assistant Professor of Practice, Habib University and CEO Urban Collaborative",
+    title:"Assistant Professor of Practice, Habib University and CEO Urban Collaborative",
+    //title: "CEO Urban Collaborative",
     id: 1,
     description: `Farhan Anwar is an Urban Planner that works to promote narratives and practices of sustainable urban design and his portfolio. His work portfolio   includes   urban sustainability    planning,    smart    cities design,    climate change and public policy. He is presently also serving   the   World   Bank   in   the   capacity   of   Urban   Planning Consultant on the Karachi Transformation Strategy project.  Anwar is the Lead Author of the Sanitation Strategy, Government of Sindh and the Author of Pakistan’s National Strategy and Action Plan for the Mangroves of the Future Regional Program. He has a number of publications to his credit and contributes regularly to news publications focusing on urban planning, public policy, environment, and development issues.
 `,
