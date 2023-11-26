@@ -6,33 +6,33 @@ const cardData = [
   {
     id: 1,
     name: "Kubra",
-    collected: 5000,
-    total: 185000,
+    collected: 0,
+    total: 180000,
     image: "/PICTURES/KUBRA.jpg",
     description:
       "An aspiring beautician and mother of three, Kubra is looking forward to pursue her passion by setting up a home studio for which she needs your assistance",
   },
-  {
-    id: 2,
-    name: "Jashwanti",
-    collected: 3500,
-    total: 5000,
-    image: "/PICTURES/JASHWANTI.jpg",
-  },
-  {
-    id: 3,
-    name: "Pargatti",
-    collected: 1200,
-    total: 5000,
-    image: "/PICTURES/PARGATTI.jpg",
-  },
-  {
-    id: 4,
-    name: "Rajeeb",
-    collected: 4000,
-    total: 5000,
-    image: "/PICTURES/RAJEEB.jpg",
-  },
+  // {
+  //   id: 2,
+  //   name: "Jashwanti",
+  //   collected: 3500,
+  //   total: 5000,
+  //   image: "/PICTURES/JASHWANTI.jpg",
+  // },
+  // {
+  //   id: 3,
+  //   name: "Pargatti",
+  //   collected: 1200,
+  //   total: 5000,
+  //   image: "/PICTURES/PARGATTI.jpg",
+  // },
+  // {
+  //   id: 4,
+  //   name: "Rajeeb",
+  //   collected: 4000,
+  //   total: 5000,
+  //   image: "/PICTURES/RAJEEB.jpg",
+  // },
 ];
 
 const DonationPage = () => {

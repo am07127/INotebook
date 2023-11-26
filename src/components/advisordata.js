@@ -26,7 +26,7 @@ const Advisor = [
   {
     name: "Sarah Shafiq",
     image: "/PICTURES/SARAH.jpg",
-    title: "Manager",
+    title: "Social Activist",
     id: 4,
     description: `Sarah is an entrepreneur and an active member of various entities supporting people from different socioeconomic backgrounds. She has extensive social work to her credit and has also worked as a primary school teacher in the past. A deep sense of compassion for the lesser privileged drives her commitment and innovation for giving back to society.
     `
