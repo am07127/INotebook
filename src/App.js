@@ -13,6 +13,7 @@ import images from './components/images';
 import Memberinfo from './components/memberinfo';
 import PersonState from './context/PersonState';
 import HunarKada from './components/hunarkada.js';
+import VideoPage from './components/videopage.js';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route exact path="/media" element={<Mediagallery images={images}/>}></Route>
             <Route exact path="/team/info" element={<Memberinfo/>}></Route>
             <Route exact path="/hunarkada" element={<HunarKada/>}></Route>
+            <Route exact path="/videopage/:video" element={<VideoPage/>}></Route>
           </Routes>
           <Footer />
       </Router>
