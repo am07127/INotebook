@@ -12,7 +12,6 @@ const Stories = () => {
         console.log("getStories called");
         try {
             const response = await fetch(`${host}/api/stories/getstories`, {
-                mode: 'no-cors',
                 method: 'GET',
             });
             if (!response.ok) {
