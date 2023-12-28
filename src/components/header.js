@@ -1,9 +1,21 @@
 // new code
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import DonationContext from "../context/DonationContext";
 
-export default class Header extends Component {
-  render() {
+const Header = () => {
+    const context = useContext(DonationContext);
+    const { isLoggedin, setIsLoggedin } = context;
+
+    let navigate = useNavigate();
+
+    const handleLogout = () => {
+        localStorage.removeItem("token");
+        setIsLoggedin(false);
+        navigate("/");
+    };
+
     return (
       <div>
         <header className="text-gray-600 body-font bg-gradient-to-r from-gray-100 to-green-300">
@@ -37,7 +49,7 @@ export default class Header extends Component {
                 HunarKada
               </Link>
             </nav>
-
+            {!isLoggedin ? (
             <Link to="/login">
               <button
                 className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
@@ -56,13 +68,31 @@ export default class Header extends Component {
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </button>
-            </Link>
+            </Link>) : (<button
+                className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+                style={{ color: "white", backgroundColor: "dodgerblue" }}
+                onClick={handleLogout}
+              >
+                <b>Log out</b>
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-4 h-4 ml-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>)}
           </div>
         </header>
       </div>
     );
   }
-}
+
+export default Header;
 
 
 

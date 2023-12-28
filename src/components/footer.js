@@ -41,7 +41,7 @@ export default class footer extends Component {
               </a>
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-              <a className="text-gray-500">
+              <a className="text-gray-500" href="https://www.facebook.com/profile.php?id=100093849613775&mibextid=zLoPMf">
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"

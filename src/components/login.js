@@ -1,17 +1,23 @@
 import React, {useState} from 'react'
 
 import { useNavigate } from 'react-router';
+import { useContext } from 'react';
+import DonationContext from '../context/DonationContext';
 
 const Login = () => {
 
   const [credentials, setCredentials] = useState({email: "", password: ""})
+  const context = useContext(DonationContext);
+  const {setIsLoggedin } = context;
 
   let navigate = useNavigate();
 
   const host = "https://mhmk-backend.onrender.com"
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoggedin(true);
 
     const response = await fetch(`${host}/api/auth/login`, {
       method: 'POST',

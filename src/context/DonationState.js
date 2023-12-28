@@ -3,8 +3,11 @@ import DonationContext from "./DonationContext";
 
 const DonationState = (props) => {
     const [donations, setDonations] = useState([]);
+    const [isLoggedin, setIsLoggedin] = useState(false);
 
     const host = "https://mhmk-backend.onrender.com"; 
+
+  
 
     const GetDonations = async () => {
         console.log("getDonations called");
@@ -90,7 +93,7 @@ const DonationState = (props) => {
       }
 
   return (
-    <DonationContext.Provider value={{ donations, GetDonations, AddDonation, updateCase, deleteCase}}>
+    <DonationContext.Provider value={{ donations, GetDonations, AddDonation, updateCase, deleteCase, isLoggedin, setIsLoggedin}}>
       {props.children}
     </DonationContext.Provider>
   );
