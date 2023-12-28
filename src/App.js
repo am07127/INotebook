@@ -14,6 +14,8 @@ import Memberinfo from './components/memberinfo';
 import PersonState from './context/PersonState';
 import HunarKada from './components/hunarkada.js';
 import VideoPage from './components/videopage.js';
+import Dashboard from './components/dashboard.js';
+import DonationState from './context/DonationState.js';
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <PersonState>
+      <DonationState>
       <Router>
           <Header />
           <Routes>
@@ -33,9 +36,11 @@ function App() {
             <Route exact path="/team/info" element={<Memberinfo/>}></Route>
             <Route exact path="/hunarkada" element={<HunarKada/>}></Route>
             <Route exact path="/videopage/:video" element={<VideoPage/>}></Route>
+            <Route exact path="/dashboard" element={<Dashboard/>}></Route>
           </Routes>
           <Footer />
       </Router>
+      </DonationState>
       </PersonState>
     </div>
   );

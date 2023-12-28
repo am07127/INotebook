@@ -5,7 +5,26 @@ export default function Card(props) {
   const { title, description, image, name, video } = props;
   const history = useNavigate();
 
+  
+
+  const convertBufferToBase64 = (buffer) => {
+    let binary = '';
+    const bytes = new Uint8Array(buffer);
+    const len = bytes.byteLength;
+
+    for (let i = 0; i < len; i++) {
+        binary += String.fromCharCode(bytes[i]);
+    }
+
+    return window.btoa(binary);
+};
+
+const base64Image = convertBufferToBase64(image.data.data);
+
+
   const handleImageClick = () => {
+    console.log("clicked");
+    console.log(video);
     history(`/videopage/${encodeURIComponent(video)}`);
   };
 
@@ -14,7 +33,7 @@ export default function Card(props) {
       <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-white">
         <img
           className="lg:h-64 lg:w-full md:h-46 w-full object-cover object-center"
-          src={image}
+          src={`data:${image.contentType};base64,${base64Image}`}
           alt="blog"
           onClick={handleImageClick}
         />

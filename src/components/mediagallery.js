@@ -17,8 +17,8 @@ const MediaGallery = ({ images }) => {
   return (
     // <div className="w-full justify-center items-center">
     <div className="w-full h-full flex items-center justify-center object-center">
-      <div className="w-full max-w-4x1 mx-auto">
-        <Slider {...settings} className="rounded-lg overflow-hidden">
+      <div className="w-full h-full max-w-4x1 mx-auto mt-20">
+        <Slider {...settings} className="rounded-lg overflow-hidden h-full" style={{height:"470px"}}>
           {images.map((item) => (
             <div key={item.id} className="focus:outline-none">
               <img
